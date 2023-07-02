@@ -232,8 +232,6 @@ std::list<int> threadSafeList;
 const int maxBufferSize = 15;
 std::mutex m;
 std::condition_variable condition;
-std::counting_semaphore<maxBufferSize> full;
-std::counting_semaphore<maxBufferSize> empty;
 
 void mutex_thread(int x)
 {

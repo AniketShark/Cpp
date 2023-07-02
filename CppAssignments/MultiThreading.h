@@ -40,8 +40,6 @@ public:
 extern std::list<int> threadSafeList;
 extern std::mutex m;
 extern std::condition_variable condition;
-extern std::counting_semaphore full;
-extern std::counting_semaphore empty;
 
 
 void FunctionA();

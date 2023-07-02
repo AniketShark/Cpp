@@ -130,12 +130,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CppAssignment2.h" />
+    <ClInclude Include="Functions.h" />
+    <ClInclude Include="FunctionTemplates.h" />
     <ClInclude Include="MultiThreading.h" />
     <ClInclude Include="Playground.h" />
     <ClInclude Include="Pointers.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="app.cpp" />
+    <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="FunctionTemplates.cpp" />
     <ClCompile Include="MultiThreading.cpp" />
     <ClCompile Include="Playground.cpp" />
     <ClCompile Include="Pointers.cpp" />
