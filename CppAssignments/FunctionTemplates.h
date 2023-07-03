@@ -71,9 +71,40 @@ std::string concatenate(T a, P b)
 // Auto deduction of return type
 template<typename T, typename P>
 auto sum(T a, P b);
+
+// Using trailing return type to deduce actual return type of the function.
+// 
+// in template you can use decltype(expression) as trailing return type to deduce
+// return type at function declaration.
+template<typename T, typename P>
+auto maxi(T a, P b) -> decltype((a > b) ? a : b);
+
+
+/// Default Arguments Type in Templates
+template <typename ReturnType = double, typename T, typename P>
+ReturnType add(T a, P b)
+{
+	return a + b;
+}
+
+/// Default Arguments Type in Templates
+template <typename T, typename P, typename ReturnType = double>
+ReturnType subtract(T a, P b)
+{
+	return a - b;
+}
+
+// Auto Fuction Templates 
+//auto func_add(auto a, auto b)
 //{
 //	return a + b;
 //}
+
+
+
+/// <summary>
+/// Section dedicated to testing methods
+/// </summary>
 void FunctionTemplateTesting();
 void FuntionWithReturnType();
 

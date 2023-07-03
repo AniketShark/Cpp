@@ -21,6 +21,16 @@ auto sum(T a, P b)
 	return a + b;
 }
 
+// function with trailing return type
+template<typename T, typename P>
+auto maxi(T a, P b) -> decltype((a > b) ? a : b)
+{
+	return (a > b) ? a : b;
+}
+
+
+
+
 void FunctionTemplateTesting()
 {
 	const int b = 20.7;
@@ -67,9 +77,9 @@ void FuntionWithReturnType()
 	printf("%d  %f   max? = %f \n", a, b, max<double, double, int>(b, a));
 	printf("%d  %c   max? = %c \n", a, c, max<char>(c, a));
 	printf("%d  %c   max? = %d \n", a, c, max<int>(c, a));
+	printf("%d  %c   max? = %d \n", a, c, maxi(c, a));
 	
 	auto result = sum(a, c);
 	printf(" Size Of result %d \n ", sizeof(result));
-
 	printf("Sum of %d + %c = %c \n", a, c,result);
 }
