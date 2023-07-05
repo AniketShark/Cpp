@@ -130,7 +130,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Arrays.h" />
+    <ClInclude Include="Box.h" />
+    <ClInclude Include="Classes.h" />
+    <ClInclude Include="Constants.h" />
     <ClInclude Include="CppAssignment2.h" />
+    <ClInclude Include="Cylinder.h" />
     <ClInclude Include="Functions.h" />
     <ClInclude Include="FunctionTemplates.h" />
     <ClInclude Include="Lambda.h" />
@@ -142,6 +146,9 @@
     <ClCompile Include="app.cpp" />
     <ClCompile Include="ArrayExtensions.cpp" />
     <ClCompile Include="Arrays.cpp" />
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="Classes.cpp" />
+    <ClCompile Include="Cylinder.cpp" />
     <ClCompile Include="Functions.cpp" />
     <ClCompile Include="FunctionTemplates.cpp" />
     <ClCompile Include="Lambda.cpp" />

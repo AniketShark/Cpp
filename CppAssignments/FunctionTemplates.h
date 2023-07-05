@@ -107,5 +107,3 @@ ReturnType subtract(T a, P b)
 /// </summary>
 void FunctionTemplateTesting();
 void FuntionWithReturnType();
-
-
